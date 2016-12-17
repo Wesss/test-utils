@@ -1,3 +1,5 @@
+package org.wesss.test_utils;
+
 import com.google.testing.compile.JavaFileObjects;
 import com.google.testing.compile.JavaSourceSubjectFactory;
 import org.hamcrest.BaseMatcher;

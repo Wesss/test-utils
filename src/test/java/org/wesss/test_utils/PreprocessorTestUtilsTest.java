@@ -1,11 +1,10 @@
-import com.google.testing.compile.JavaFileObjects;
-import com.google.testing.compile.JavaSourceSubjectFactory;
+package org.wesss.test_utils;
+
 import org.junit.Test;
 
 import java.io.File;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.truth0.Truth.ASSERT;
 
 public class PreprocessorTestUtilsTest {
 
