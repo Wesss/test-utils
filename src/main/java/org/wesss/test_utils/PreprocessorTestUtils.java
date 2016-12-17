@@ -9,32 +9,31 @@ import java.io.File;
  */
 public class PreprocessorTestUtils {
 
-	// TODO package test utils
-	// TODO tabs to spaces check everything
+    // TODO tabs to spaces check everything
 
-	/**
-	 *
-	 * @param fileName the name of the source file to retrieve
-	 * @requires a matching .java file exists in src/test/resources/
-	 * @return the file specified
-	 */
-	public static File getJavaSourceFile(String fileName) {
-		//TODO file existence checking
-		return new File("src/test/resources/" + fileName + ".java");
-	}
+    /**
+     *
+     * @param fileName the name of the source file to retrieve
+     * @requires a matching .java file exists in src/test/resources/
+     * @return the file specified
+     */
+    public static File getJavaSourceFile(String fileName) {
+        //TODO file existence checking
+        return new File("src/test/resources/" + fileName + ".java");
+    }
 
-	public static Matcher<File> compilesWithoutError() {
-		return new CompileMatcher(true);
-	}
+    public static Matcher<File> compilesWithoutError() {
+        return new CompileMatcher(true);
+    }
 
-	public static Matcher<File> failsToCompile() {
-		return new CompileMatcher(false);
-	}
+    public static Matcher<File> failsToCompile() {
+        return new CompileMatcher(false);
+    }
 
-	/**
-	 * Disable Creation
-	 */
-	private PreprocessorTestUtils() {
+    /**
+     * Disable Creation
+     */
+    private PreprocessorTestUtils() {
 
-	}
+    }
 }

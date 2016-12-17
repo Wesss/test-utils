@@ -12,8 +12,8 @@ import java.util.Set;
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class TestPreprocessor extends AbstractProcessor {
 
-	@Override
-	public boolean process(Set<? extends TypeElement> typeElements, RoundEnvironment roundEnv) {
-		return false;
-	}
+    @Override
+    public boolean process(Set<? extends TypeElement> typeElements, RoundEnvironment roundEnv) {
+        return false;
+    }
 }
