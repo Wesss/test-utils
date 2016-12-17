@@ -7,7 +7,9 @@ import java.io.File;
 /**
  * TODO document preprocessor test utils
  */
-public class PreprocessorTestUtils {
+public class Compiles {
+
+    //TODO multiple file compilation support
 
     /**
      * TODO seperate file utils
@@ -39,7 +41,7 @@ public class PreprocessorTestUtils {
     /**
      * Disable Creation
      */
-    private PreprocessorTestUtils() {
+    private Compiles() {
 
     }
 }

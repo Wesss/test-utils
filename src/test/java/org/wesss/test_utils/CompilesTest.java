@@ -13,10 +13,10 @@ import java.io.File;
 import java.util.Set;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.wesss.test_utils.PreprocessorTestUtils.compilesWithoutError;
-import static org.wesss.test_utils.PreprocessorTestUtils.failsToCompile;
+import static org.wesss.test_utils.Compiles.compilesWithoutError;
+import static org.wesss.test_utils.Compiles.failsToCompile;
 
-public class PreprocessorTestUtilsTest {
+public class CompilesTest {
 
     private File compilableFile;
     private File notCompilableFile;
@@ -24,7 +24,7 @@ public class PreprocessorTestUtilsTest {
     private EmptyPreprocessor emptyPreprocessor2;
     private FailingPreprocessor failingPreprocessor;
 
-    public PreprocessorTestUtilsTest() {
+    public CompilesTest() {
         compilableFile = new File("src/test/resources/Compilable.java");
         notCompilableFile = new File("src/test/resources/NotCompilable.java");
         emptyPreprocessor = new EmptyPreprocessor();
