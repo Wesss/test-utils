@@ -9,11 +9,9 @@ import java.io.File;
  */
 public class PreprocessorTestUtils {
 
-    // TODO tabs to spaces check everything
-
     /**
      *
-     * @param fileName the name of the source file to retrieve
+     * @param fileName the name of the source file to retrieve without the .java extension
      * @requires a matching .java file exists in src/test/resources/
      * @return the file specified
      */
@@ -22,10 +20,18 @@ public class PreprocessorTestUtils {
         return new File("src/test/resources/" + fileName + ".java");
     }
 
+    /**
+     *
+     * @return
+     */
     public static Matcher<File> compilesWithoutError() {
         return new CompileMatcher(true);
     }
 
+    /**
+     *
+     * @return
+     */
     public static Matcher<File> failsToCompile() {
         return new CompileMatcher(false);
     }

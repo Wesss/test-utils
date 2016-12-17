@@ -10,14 +10,11 @@ import java.util.function.Predicate;
 
 public class LambdaMatcher<T> extends BaseMatcher<T> {
 
-    //TODO
-
     private Predicate<T> matchingPredicate;
     private Consumer<Description> expectedDescriptor;
     private BiConsumer<T, Description> mismatchDescriptor;
-    private
     @Nullable
-    Exception thrownMatchException;
+    private Exception thrownMatchException;
 
     public LambdaMatcher(Predicate<T> matchingPredicate,
                          Consumer<Description> expectedDescriptor,
