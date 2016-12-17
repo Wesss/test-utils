@@ -10,7 +10,7 @@ import java.io.File;
 public class PreprocessorTestUtils {
 
     /**
-     *
+     * TODO seperate file utils
      * @param fileName the name of the source file to retrieve without the .java extension
      * @requires a matching .java file exists in src/test/resources/
      * @return the file specified
@@ -24,7 +24,7 @@ public class PreprocessorTestUtils {
      *
      * @return
      */
-    public static Matcher<File> compilesWithoutError() {
+    public static CompileMatcher compilesWithoutError() {
         return new CompileMatcher(true);
     }
 
@@ -32,7 +32,7 @@ public class PreprocessorTestUtils {
      *
      * @return
      */
-    public static Matcher<File> failsToCompile() {
+    public static CompileMatcher failsToCompile() {
         return new CompileMatcher(false);
     }
 
