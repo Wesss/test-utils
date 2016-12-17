@@ -5,9 +5,7 @@ import com.google.testing.compile.JavaFileObjects;
 import com.google.testing.compile.JavaSourceSubjectFactory;
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
-import org.wess.general_utils.collection.CollectionFactory;
 
-import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Processor;
 import java.io.File;
 import java.net.MalformedURLException;
