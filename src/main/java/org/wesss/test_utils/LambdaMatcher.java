@@ -1,8 +1,8 @@
 package org.wesss.test_utils;
 
-import com.sun.istack.internal.Nullable;
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
+import org.wesss.general_utils.annotations.Nullable;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
