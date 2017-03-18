@@ -1,4 +1,4 @@
-package org.wesss.test_utils;
+package org.wesss.test_utils.matchers;
 
 import org.hamcrest.Matcher;
 

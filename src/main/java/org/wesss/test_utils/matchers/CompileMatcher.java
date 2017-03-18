@@ -1,4 +1,4 @@
-package org.wesss.test_utils;
+package org.wesss.test_utils.matchers;
 
 import com.google.testing.compile.CompileTester;
 import com.google.testing.compile.JavaFileObjects;
@@ -49,10 +49,7 @@ public class CompileMatcher extends BaseMatcher<File> {
             } else {
                 assertCompilationSetup.failsToCompile();
             }
-        } catch (AssertionError e) {
-            // TODO better error descriptions
-            return false;
-        } catch (MalformedURLException e) {
+        } catch (AssertionError | MalformedURLException e) {
             // TODO better error descriptions
             return false;
         }

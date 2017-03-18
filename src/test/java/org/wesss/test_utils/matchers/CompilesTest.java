@@ -1,4 +1,4 @@
-package org.wesss.test_utils;
+package org.wesss.test_utils.matchers;
 
 import org.junit.Test;
 
@@ -13,8 +13,8 @@ import java.io.File;
 import java.util.Set;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.wesss.test_utils.Compiles.compilesWithoutError;
-import static org.wesss.test_utils.Compiles.failsToCompile;
+import static org.wesss.test_utils.matchers.Compiles.compilesWithoutError;
+import static org.wesss.test_utils.matchers.Compiles.failsToCompile;
 
 public class CompilesTest {
 

@@ -1,4 +1,4 @@
-package org.wesss.test_utils;
+package org.wesss.test_utils.matchers;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.mockito.Mockito.*;
-import static org.wesss.test_utils.IsSuchThat.*;
+import static org.wesss.test_utils.matchers.IsSuchThat.*;
 
 public class LambdaMatcherTest {
 
@@ -43,7 +43,7 @@ public class LambdaMatcherTest {
     @Test
     public void nullDoesntMatchObj() {
         Object obj = new Object();
-        assertThat(null, is(isSuchThat(o -> o.equals(obj))));
+        assertThat(null, not(isSuchThat(o -> o.equals(obj))));
     }
 
     @Test
