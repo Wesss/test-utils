@@ -5,7 +5,7 @@ import static org.mockito.Mockito.mock;
 public class MockUtils {
 
     @SuppressWarnings("unchecked")
-    static <T> T genericMock(Class<? super T> classToMock) {
+    public static <T> T genericMock(Class<? super T> classToMock) {
         return (T)mock(classToMock);
     }
 }
